@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+
+/* main styling and grid layout */
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    max-width: 1024px;
+    grid-template-areas: 'one one one two five' 'three four four four five';
+    gap: 2em;
+    padding: 8em;
+    text-align: justify;
+}
+
+@media screen and (min-width: 480px) {
+    .one {
+        grid-area: one;
+        background-color: rgb(160, 111, 209);
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .Jonatan {
+        grid-area: two;
+        background-color: rgb(69, 84, 104);
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .Jeanette {
+        grid-area: three;
+        background-color: white;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .Patrick {
+        grid-area: four;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .Kira {
+        grid-area: five;
+        background-color: white;
+        border-radius: 5px;
+    }
+}
