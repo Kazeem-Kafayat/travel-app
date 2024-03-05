@@ -1,10 +1,12 @@
-import logo from '../logo.svg';
 import './App.css';
+import {LandingPageHeader} from './components/LandingPageHeader';
+import { GetStarted } from './components/SectionOne/GetStarted';
 
 function App() {
 
   return (<div>
-    <h1>Hello world</h1>
+    <LandingPageHeader/>
+    <GetStarted/>
   </div>
    
   );
